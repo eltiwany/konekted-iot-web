@@ -1,3 +1,5 @@
+import { RouterTestingModule } from '@angular/router/testing';
+import { NavigationStart } from '@angular/router';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TopNavComponent } from './top-nav.component';
@@ -8,6 +10,7 @@ describe('TopNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
       declarations: [ TopNavComponent ]
     })
     .compileComponents();
@@ -19,7 +22,7 @@ describe('TopNavComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should hide mobile menu by default', () => {
+    expect(component.config.mobileMenu).toBeFalse();
   });
 });
