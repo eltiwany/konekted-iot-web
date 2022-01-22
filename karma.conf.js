@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/kokented-iot-web'),
+      dir: require('path').join(__dirname, './coverage/konekted-iot-web'),
       subdir: '.',
       reporters: [
         { type: 'html' },

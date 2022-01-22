@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kokented-iot-web": {
+    "konekted-iot-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kokented-iot-web",
+            "outputPath": "dist/konekted-iot-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "kokented-iot-web:build:production"
+              "browserTarget": "konekted-iot-web:build:production"
             },
             "development": {
-              "browserTarget": "kokented-iot-web:build:development"
+              "browserTarget": "konekted-iot-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kokented-iot-web:build"
+            "browserTarget": "konekted-iot-web:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "kokented-iot-web"
+  "defaultProject": "konekted-iot-web"
 }
