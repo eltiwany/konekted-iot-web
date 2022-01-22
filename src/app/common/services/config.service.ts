@@ -5,10 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class ConfigService {
   title = 'Konekted IoT';
-  bgImageUrl = 'assets/images/home-bg.jpg';
-  bgImageAlt = 'Connected Devices';
+  imagePath = 'assets/images/';
 
-  logoImageUrl = 'assets/images/konekted.png';
+  images = {
+    notFound: this.imagePath + '404.svg',
+    logo: this.imagePath + 'konekted.png',
+  };
+
   mobileMenu = false;
 
   toggleMobileMenu() {
@@ -18,6 +21,6 @@ export class ConfigService {
   hideMobileMenu() {
     this.mobileMenu = false;
   }
-  
+
   constructor() { }
 }
