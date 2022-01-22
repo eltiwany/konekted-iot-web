@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './not-found/not-found.component';
 import { DemoComponent } from './demo/demo.component';
 import { SupportComponent } from './support/support.component';
 import { AboutComponent } from './about/about.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'support', component: SupportComponent},
   {path: 'demo', component: DemoComponent},
+  {path: '**', component: NotFoundComponent},
 ];
 
 @NgModule({
