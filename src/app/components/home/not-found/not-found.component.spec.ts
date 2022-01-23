@@ -19,7 +19,7 @@ describe('NotFoundComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('it should contain not found image', () => {
+    expect(component.config.images.notFound).toBeDefined();
   });
 });
