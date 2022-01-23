@@ -1,1 +1,125 @@
-<p>demo works!</p>
+<section class="bg-gray-100 rounded-lg border-b py-8 demo-section">
+  <div class="container max-w-5xl px-3 mx-auto m-8">
+      <img [src]="config.images.logo" class="mx-auto" width="200px" alt="">
+      <h2 class="w-full my-2 text-3xl font-black leading-tight text-center text-gray-800">
+        How Konekted IoT Works
+      </h2>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+
+    <!-- Step 1 -->
+    <div class="flex flex-wrap">
+      <div class="w-5/6 sm:w-1/2 p-6">
+        <h3 class="text-2xl text-gray-800 font-bold leading-none mb-3 lh-2">
+          <span class="rounded-full bg-indigo-600 text-white font-mono p-fit">1</span>
+          Create account on konekted IoT
+        </h3>
+        <p class="text-indigo-900 md:ml-11 underline font-bold mb-0">
+          <a routerLink="/register">Click here to register!</a>
+          <br><br>
+        </p>
+        <div class="hidden md:block">
+          <img src="assets/images/demo/curved-arrow.svg" class="filter-indigo left-to-right float-right" alt="">
+        </div>
+      </div>
+      <div class="w-full sm:w-1/2 p-6">
+        <img class="shadow-yellow" src="assets/images/demo/register.png" alt="Register to Konekted IoT">
+      </div>
+    </div>
+
+    <div class="block md:hidden">
+      <hr>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+      <div class="w-full sm:w-1/2 p-6 mt-6">
+        <img src="assets/images/demo/token.png" class="shadow-yellow" alt="Token">
+      </div>
+      <div class="w-full sm:w-1/2 p-6 mt-6">
+        <div class="text-right">
+          <h3 class="text-2xl text-gray-800 font-bold leading-none mb-3 lh-2">
+            Copy provided token that will be used as "key" to connect to hardware
+            <span class="rounded-full bg-indigo-600 text-white font-mono p-fit">2</span>
+          </h3>
+          <div class="hidden md:block">
+            <img src="assets/images/demo/curved-arrow.svg" class="filter-indigo right-to-left" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block md:hidden">
+      <hr>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="flex flex-wrap">
+      <div class="w-5/6 sm:w-1/2 p-6">
+        <h3 class="text-2xl text-gray-800 font-bold leading-none mb-3 lh-2">
+          <span class="rounded-full bg-indigo-600 text-white font-mono p-fit">3</span>
+          Connect IoT devices to controller<sup>*</sup>, then download and install konekted library
+        </h3>
+        <p class="text-indigo-900 md:ml-11 underline font-bold mb-0">
+          <a target="_blank" href="https://github.com/eltiwany/konekted-iot-library">Click here to download and install!</a>
+          <br><br>
+        </p>
+        <div class="hidden md:block">
+          <img src="assets/images/demo/curved-arrow.svg" class="filter-indigo left-to-right float-right" alt="">
+        </div>
+      </div>
+      <div class="w-full sm:w-1/2 p-6">
+        <img class="shadow-yellow" src="assets/images/demo/nodemcu-connection.jpg" alt="NodeMCU connection">
+      </div>
+    </div>
+
+    <div class="block md:hidden">
+      <hr>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+      <div class="w-full sm:w-1/2 p-6 mt-6">
+        <img src="assets/images/demo/konektedlibrary.png" class="shadow-yellow" alt="Konekted Example Code">
+      </div>
+      <div class="w-full sm:w-1/2 p-6 mt-6">
+        <div class="text-right">
+          <h3 class="text-2xl text-gray-800 font-bold leading-none mb-3 lh-2">
+            Open example on konekted library then replace <u>wifi name, password and token</u> and upload provided example to controller<sup>*</sup>
+            <span class="rounded-full bg-indigo-600 text-white font-mono p-fit">4</span>
+          </h3>
+          <div class="hidden md:block">
+            <img src="assets/images/demo/curved-arrow.svg" class="filter-indigo right-to-left" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block md:hidden">
+      <hr>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="flex flex-wrap">
+      <div class="w-5/6 sm:w-1/2 p-6">
+        <h3 class="text-2xl text-gray-800 font-bold leading-none mb-3 lh-2">
+          <span class="rounded-full bg-indigo-600 text-white font-mono p-fit">5</span>
+          Finally, login add your devices to the web application to monitor and control!
+        </h3>
+        <p class="text-indigo-900 md:ml-11 underline font-bold mb-0">
+          <a routerLink="/login">Click here to login</a>
+          <br><br>
+        </p>
+        <div class="hidden md:block">
+          <img src="assets/images/demo/curved-arrow.svg" class="filter-indigo left-to-right float-right" alt="">
+        </div>
+      </div>
+      <div class="w-full sm:w-1/2 p-6">
+        <img class="shadow-yellow" src="assets/images/demo/dashboard.png" alt="Konekted dashboard">
+        <small class="text-red-600">**This dashboard is not konekted dashboard, it is used as demo only at the moment</small>
+      </div>
+    </div>
+
+  </div>
+</section>
