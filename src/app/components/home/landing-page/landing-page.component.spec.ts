@@ -22,4 +22,9 @@ describe('LandingPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain two main sentenses', () => {
+    expect(component.config.landingPage.line1).toBeDefined();
+    expect(component.config.landingPage.line2).toBeDefined();
+  });
 });

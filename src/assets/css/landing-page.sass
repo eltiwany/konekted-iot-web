@@ -1,9 +1,17 @@
 .body-animated
+  &::-webkit-scrollbar
+    width: .3em
+
+  &::-webkit-scrollbar-thumb
+    background-color: rgba(70, 79, 229)
+    outline: 1px solid #fff
+
+.body-animated
   margin: 0
   height: 100vh
   font-weight: 100
   background: radial-gradient(#7a97ff, #c6e3ff) !important
-  overflow-y: hidden
+  overflow-y: scroll
   -webkit-animation: fadeIn 1 1s ease-out
   -moz-animation: fadeIn 1 1s ease-out
   -o-animation: fadeIn 1 1s ease-out

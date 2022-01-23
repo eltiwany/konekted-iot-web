@@ -4,12 +4,18 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ConfigService {
+  landingPage = {
+    line1: 'Connecting IoT devices',
+    line2: 'should be simpler and faster ⚡'
+  }
+
   title = 'Konekted IoT';
   imagePath = 'assets/images/';
 
   images = {
     notFound: this.imagePath + '404.svg',
-    logo: this.imagePath + 'konekted.png',
+    accessDenied: this.imagePath + '401.svg',
+    logo: this.imagePath + 'konekted.svg',
   };
 
   mobileMenu = false;
@@ -20,6 +26,41 @@ export class ConfigService {
 
   hideMobileMenu() {
     this.mobileMenu = false;
+  }
+
+  /**
+   * Open modal with specified modal id
+   * if modal Id is not specified it will
+   * use modal class 'modal'
+   * @param modalId
+   */
+  openModal(modalId?: any) {
+    let modal = modalId ?
+                document.getElementById(modalId) :
+                document.getElementsByClassName('modal')[0];
+    modal?.classList.remove('hidden');
+  }
+
+  /**
+   * Close modal with specified modal id
+   * if modal Id is not specified it will
+   * use modal class 'modal'
+   * @param modalId modalId
+   */
+  closeModal(modalId?: any) {
+      let modal = modalId ?
+                  document.getElementById(modalId) :
+                  document.getElementsByClassName('modal')[0];
+      modal?.classList.add('hidden');
+  }
+
+  /**
+   * Close all modals with  modal class 'modal'
+   * @param void
+   */
+  closeAllModals() {
+    let modal = document.getElementsByClassName('modal')[0];
+    modal?.classList.add('hidden');
   }
 
   constructor() { }
