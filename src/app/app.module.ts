@@ -2,7 +2,6 @@ import { HomeModule } from './components/home/home.module';
 import { AuthModule } from './components/auth/auth.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
