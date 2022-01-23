@@ -1,1 +1,18 @@
-<p>access-denied works!</p>
+<!-- component -->
+<!-- This is an example component -->
+<div class="h-auto bg-gray-100 flex items-center rounded-lg p-4">
+	<div class="container flex flex-col md:flex-row items-center justify-center px-5 text-gray-700">
+   		<div class="max-w-md">
+      		<div class="text-5xl font-dark font-bold text-red-500">401 ⚠</div>
+            <p
+              class="text-2xl md:text-3xl font-medium leading-normal mb-2"
+            >Sorry, you are not authorized to access this page. </p>
+          <p class="mb-8 font-medium">Please return back to home.</p>
+          <a routerLink="" class="px-4 inline py-2 text-sm font-medium leading-5 shadow text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none focus:shadow-outline-indigo bg-indigo-600 active:bg-indigo-600 hover:bg-indigo-700">Back to homepage</a>
+    </div>
+      <div class="max-w-lg">
+        <img [src]="config.images.accessDenied" width="1800" alt="Not Found">
+      </div>
+
+  </div>
+</div>
